@@ -1,0 +1,76 @@
+#MegaContainer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+#ImgContainer{
+    width: 500vw;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 1000ms ease-in-out;
+    transform: translateX(-100vw);
+    div:nth-child(1){
+        width: 100vw;
+    }
+    div:nth-child(2){
+        width: 100vw;
+    }
+    div:nth-child(3){
+        width: 100vw;
+    }
+    div:nth-child(4){
+        width: 100vw;
+    }
+    div:nth-child(5){
+        width: 100vw;
+    }
+}
+
+#LeftButton{
+    position: absolute;
+    left: 1vw;
+    top: 20vw;
+    font-size: 5vw;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+}
+
+
+#RightButton{
+    position: absolute;
+    right: 1vw;
+    top: 20vw;
+    font-size: 5vw;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+}
+
+#SlideIndicatorContainer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+.SlideIndicator{
+    width: 1vw;
+    height: 1vw;
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2vw 3vw;
+    transition: 950ms ease-in-out;
+}
+.SlideIndicator:nth-child(2){
+    background-color: rgba(255, 255, 255, 0.79);
+}
+}
